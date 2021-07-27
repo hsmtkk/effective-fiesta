@@ -41,7 +41,8 @@ spec:
           - containerPort: 80
         volumeMounts:
           - name: config
-            mountPath: /usr/local/apache2/conf
+            mountPath: /usr/local/apache2/conf/httpd.conf
+            subPath: httpd.conf
       volumes:
         - name: config
           configMap:

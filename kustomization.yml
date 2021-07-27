@@ -1,7 +1,7 @@
 resources:
-  - deployment.yaml
+  - deployment.yml
   - service.yml
 configMapGenerator:
-  - name: apache-conf
+  - name: apache-config
     files:
       - httpd.conf
